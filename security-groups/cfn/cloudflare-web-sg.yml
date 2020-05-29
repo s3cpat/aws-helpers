@@ -1,0 +1,220 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: CloudFormation config for CloudFlare web ports access via Security Group.
+  @s3cpat | https://github.com/s3cpat
+Resources:
+  CloudFlareWebPortsSecurityGroup:
+    Properties:
+      GroupDescription: Allow 80/443 via Cloudflare
+      SecurityGroupIngress:
+      - CidrIp: 173.245.48.0/20
+        Description: Allow 80 from Cloudflare IP
+        FromPort: 80
+        IpProtocol: tcp
+        ToPort: 80
+      - CidrIp: 103.21.244.0/22
+        Description: Allow 80 from Cloudflare IP
+        FromPort: 80
+        IpProtocol: tcp
+        ToPort: 80
+      - CidrIp: 103.22.200.0/22
+        Description: Allow 80 from Cloudflare IP
+        FromPort: 80
+        IpProtocol: tcp
+        ToPort: 80
+      - CidrIp: 103.31.4.0/22
+        Description: Allow 80 from Cloudflare IP
+        FromPort: 80
+        IpProtocol: tcp
+        ToPort: 80
+      - CidrIp: 141.101.64.0/18
+        Description: Allow 80 from Cloudflare IP
+        FromPort: 80
+        IpProtocol: tcp
+        ToPort: 80
+      - CidrIp: 108.162.192.0/18
+        Description: Allow 80 from Cloudflare IP
+        FromPort: 80
+        IpProtocol: tcp
+        ToPort: 80
+      - CidrIp: 190.93.240.0/20
+        Description: Allow 80 from Cloudflare IP
+        FromPort: 80
+        IpProtocol: tcp
+        ToPort: 80
+      - CidrIp: 188.114.96.0/20
+        Description: Allow 80 from Cloudflare IP
+        FromPort: 80
+        IpProtocol: tcp
+        ToPort: 80
+      - CidrIp: 197.234.240.0/22
+        Description: Allow 80 from Cloudflare IP
+        FromPort: 80
+        IpProtocol: tcp
+        ToPort: 80
+      - CidrIp: 198.41.128.0/17
+        Description: Allow 80 from Cloudflare IP
+        FromPort: 80
+        IpProtocol: tcp
+        ToPort: 80
+      - CidrIp: 162.158.0.0/15
+        Description: Allow 80 from Cloudflare IP
+        FromPort: 80
+        IpProtocol: tcp
+        ToPort: 80
+      - CidrIp: 104.16.0.0/12
+        Description: Allow 80 from Cloudflare IP
+        FromPort: 80
+        IpProtocol: tcp
+        ToPort: 80
+      - CidrIp: 172.64.0.0/13
+        Description: Allow 80 from Cloudflare IP
+        FromPort: 80
+        IpProtocol: tcp
+        ToPort: 80
+      - CidrIp: 131.0.72.0/22
+        Description: Allow 80 from Cloudflare IP
+        FromPort: 80
+        IpProtocol: tcp
+        ToPort: 80
+      - CidrIp: 173.245.48.0/20
+        Description: Allow 443 from Cloudflare IP
+        FromPort: 443
+        IpProtocol: tcp
+        ToPort: 443
+      - CidrIp: 103.21.244.0/22
+        Description: Allow 443 from Cloudflare IP
+        FromPort: 443
+        IpProtocol: tcp
+        ToPort: 443
+      - CidrIp: 103.22.200.0/22
+        Description: Allow 443 from Cloudflare IP
+        FromPort: 443
+        IpProtocol: tcp
+        ToPort: 443
+      - CidrIp: 103.31.4.0/22
+        Description: Allow 443 from Cloudflare IP
+        FromPort: 443
+        IpProtocol: tcp
+        ToPort: 443
+      - CidrIp: 141.101.64.0/18
+        Description: Allow 443 from Cloudflare IP
+        FromPort: 443
+        IpProtocol: tcp
+        ToPort: 443
+      - CidrIp: 108.162.192.0/18
+        Description: Allow 443 from Cloudflare IP
+        FromPort: 443
+        IpProtocol: tcp
+        ToPort: 443
+      - CidrIp: 190.93.240.0/20
+        Description: Allow 443 from Cloudflare IP
+        FromPort: 443
+        IpProtocol: tcp
+        ToPort: 443
+      - CidrIp: 188.114.96.0/20
+        Description: Allow 443 from Cloudflare IP
+        FromPort: 443
+        IpProtocol: tcp
+        ToPort: 443
+      - CidrIp: 197.234.240.0/22
+        Description: Allow 443 from Cloudflare IP
+        FromPort: 443
+        IpProtocol: tcp
+        ToPort: 443
+      - CidrIp: 198.41.128.0/17
+        Description: Allow 443 from Cloudflare IP
+        FromPort: 443
+        IpProtocol: tcp
+        ToPort: 443
+      - CidrIp: 162.158.0.0/15
+        Description: Allow 443 from Cloudflare IP
+        FromPort: 443
+        IpProtocol: tcp
+        ToPort: 443
+      - CidrIp: 104.16.0.0/12
+        Description: Allow 443 from Cloudflare IP
+        FromPort: 443
+        IpProtocol: tcp
+        ToPort: 443
+      - CidrIp: 172.64.0.0/13
+        Description: Allow 443 from Cloudflare IP
+        FromPort: 443
+        IpProtocol: tcp
+        ToPort: 443
+      - CidrIp: 131.0.72.0/22
+        Description: Allow 443 from Cloudflare IP
+        FromPort: 443
+        IpProtocol: tcp
+        ToPort: 443
+      - CidrIpv6: 2400:cb00::/32
+        Description: Allow 80 from Cloudflare IP
+        FromPort: 80
+        IpProtocol: tcp
+        ToPort: 80
+      - CidrIpv6: 2606:4700::/32
+        Description: Allow 80 from Cloudflare IP
+        FromPort: 80
+        IpProtocol: tcp
+        ToPort: 80
+      - CidrIpv6: 2803:f800::/32
+        Description: Allow 80 from Cloudflare IP
+        FromPort: 80
+        IpProtocol: tcp
+        ToPort: 80
+      - CidrIpv6: 2405:b500::/32
+        Description: Allow 80 from Cloudflare IP
+        FromPort: 80
+        IpProtocol: tcp
+        ToPort: 80
+      - CidrIpv6: 2405:8100::/32
+        Description: Allow 80 from Cloudflare IP
+        FromPort: 80
+        IpProtocol: tcp
+        ToPort: 80
+      - CidrIpv6: 2a06:98c0::/29
+        Description: Allow 80 from Cloudflare IP
+        FromPort: 80
+        IpProtocol: tcp
+        ToPort: 80
+      - CidrIpv6: 2c0f:f248::/32
+        Description: Allow 80 from Cloudflare IP
+        FromPort: 80
+        IpProtocol: tcp
+        ToPort: 80
+      - CidrIpv6: 2400:cb00::/32
+        Description: Allow 443 from Cloudflare IP
+        FromPort: 443
+        IpProtocol: tcp
+        ToPort: 443
+      - CidrIpv6: 2606:4700::/32
+        Description: Allow 443 from Cloudflare IP
+        FromPort: 443
+        IpProtocol: tcp
+        ToPort: 443
+      - CidrIpv6: 2803:f800::/32
+        Description: Allow 443 from Cloudflare IP
+        FromPort: 443
+        IpProtocol: tcp
+        ToPort: 443
+      - CidrIpv6: 2405:b500::/32
+        Description: Allow 443 from Cloudflare IP
+        FromPort: 443
+        IpProtocol: tcp
+        ToPort: 443
+      - CidrIpv6: 2405:8100::/32
+        Description: Allow 443 from Cloudflare IP
+        FromPort: 443
+        IpProtocol: tcp
+        ToPort: 443
+      - CidrIpv6: 2a06:98c0::/29
+        Description: Allow 443 from Cloudflare IP
+        FromPort: 443
+        IpProtocol: tcp
+        ToPort: 443
+      - CidrIpv6: 2c0f:f248::/32
+        Description: Allow 443 from Cloudflare IP
+        FromPort: 443
+        IpProtocol: tcp
+        ToPort: 443
+    Type: AWS::EC2::SecurityGroup
+

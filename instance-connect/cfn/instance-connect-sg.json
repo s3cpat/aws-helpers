@@ -1,0 +1,140 @@
+{
+  "AWSTemplateFormatVersion": "2010-09-09",
+  "Description": "CloudFormation config for EC2 Instance Connect-oriented Security Group. @s3cpat | https://github.com/s3cpat",
+  "Resources": {
+    "EC2INSTANCECONNECTSecurityGroup": {
+      "Type": "AWS::EC2::SecurityGroup",
+      "Properties": {
+        "GroupDescription": "Allow SSH via AWS EC2 Instance Connect",
+        "SecurityGroupIngress": [
+          {
+            "CidrIp": "13.209.1.56/29",
+            "Description": "Allow SSH from EC2 Instance Connect Range",
+            "FromPort": 22,
+            "IpProtocol": "tcp",
+            "ToPort": 22
+          },
+          {
+            "CidrIp": "13.233.177.0/29",
+            "Description": "Allow SSH from EC2 Instance Connect Range",
+            "FromPort": 22,
+            "IpProtocol": "tcp",
+            "ToPort": 22
+          },
+          {
+            "CidrIp": "13.239.158.0/29",
+            "Description": "Allow SSH from EC2 Instance Connect Range",
+            "FromPort": 22,
+            "IpProtocol": "tcp",
+            "ToPort": 22
+          },
+          {
+            "CidrIp": "13.48.4.200/30",
+            "Description": "Allow SSH from EC2 Instance Connect Range",
+            "FromPort": 22,
+            "IpProtocol": "tcp",
+            "ToPort": 22
+          },
+          {
+            "CidrIp": "13.52.6.112/29",
+            "Description": "Allow SSH from EC2 Instance Connect Range",
+            "FromPort": 22,
+            "IpProtocol": "tcp",
+            "ToPort": 22
+          },
+          {
+            "CidrIp": "18.202.216.48/29",
+            "Description": "Allow SSH from EC2 Instance Connect Range",
+            "FromPort": 22,
+            "IpProtocol": "tcp",
+            "ToPort": 22
+          },
+          {
+            "CidrIp": "18.206.107.24/29",
+            "Description": "Allow SSH from EC2 Instance Connect Range",
+            "FromPort": 22,
+            "IpProtocol": "tcp",
+            "ToPort": 22
+          },
+          {
+            "CidrIp": "18.228.70.32/29",
+            "Description": "Allow SSH from EC2 Instance Connect Range",
+            "FromPort": 22,
+            "IpProtocol": "tcp",
+            "ToPort": 22
+          },
+          {
+            "CidrIp": "18.237.140.160/29",
+            "Description": "Allow SSH from EC2 Instance Connect Range",
+            "FromPort": 22,
+            "IpProtocol": "tcp",
+            "ToPort": 22
+          },
+          {
+            "CidrIp": "3.0.5.32/29",
+            "Description": "Allow SSH from EC2 Instance Connect Range",
+            "FromPort": 22,
+            "IpProtocol": "tcp",
+            "ToPort": 22
+          },
+          {
+            "CidrIp": "3.112.23.0/29",
+            "Description": "Allow SSH from EC2 Instance Connect Range",
+            "FromPort": 22,
+            "IpProtocol": "tcp",
+            "ToPort": 22
+          },
+          {
+            "CidrIp": "3.120.181.40/29",
+            "Description": "Allow SSH from EC2 Instance Connect Range",
+            "FromPort": 22,
+            "IpProtocol": "tcp",
+            "ToPort": 22
+          },
+          {
+            "CidrIp": "3.16.146.0/29",
+            "Description": "Allow SSH from EC2 Instance Connect Range",
+            "FromPort": 22,
+            "IpProtocol": "tcp",
+            "ToPort": 22
+          },
+          {
+            "CidrIp": "3.8.37.24/29",
+            "Description": "Allow SSH from EC2 Instance Connect Range",
+            "FromPort": 22,
+            "IpProtocol": "tcp",
+            "ToPort": 22
+          },
+          {
+            "CidrIp": "35.180.112.80/29",
+            "Description": "Allow SSH from EC2 Instance Connect Range",
+            "FromPort": 22,
+            "IpProtocol": "tcp",
+            "ToPort": 22
+          },
+          {
+            "CidrIp": "35.183.92.176/29",
+            "Description": "Allow SSH from EC2 Instance Connect Range",
+            "FromPort": 22,
+            "IpProtocol": "tcp",
+            "ToPort": 22
+          },
+          {
+            "CidrIp": "18.252.4.0/30",
+            "Description": "Allow SSH from EC2 Instance Connect Range",
+            "FromPort": 22,
+            "IpProtocol": "tcp",
+            "ToPort": 22
+          },
+          {
+            "CidrIp": "15.200.28.80/30",
+            "Description": "Allow SSH from EC2 Instance Connect Range",
+            "FromPort": 22,
+            "IpProtocol": "tcp",
+            "ToPort": 22
+          }
+        ]
+      }
+    }
+  }
+}
