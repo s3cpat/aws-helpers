@@ -56,7 +56,7 @@ def create_cfn_syntax_yaml(ranges):
 
 def generate_full_config(data, asyaml=False):
     obj = {
-        'AWSTemplateFormatVersion': '2010-09-09T00:00:00.000Z',
+        'AWSTemplateFormatVersion': '2010-09-09',
         'Description': 'CloudFormation config for EC2 Instance ' + \
                        'Connect-oriented Security Group. @s3cpat' + \
                        ' | https://github.com/s3cpat',
